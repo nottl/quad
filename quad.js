@@ -9,7 +9,9 @@ $(document).ready(function() {
 		if (number === 2){
 			$("#next").css('transform', 'rotate(180deg)');
 		}
-
+if (number === 3){
+			$("#next").css('transform', 'rotate(180deg)');
+		}
 		if (number === 4){
 			$(".slide4").slideUp();
 			$(".menu4").removeClass('current');
