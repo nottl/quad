@@ -10,9 +10,9 @@ $(document).ready(function() {
 			$("#next").css('transform', 'rotate(180deg)');
 		}
 
-		if (number === 3){
-			$(".slide3").slideUp();
-			$(".menu3").removeClass('current');
+		if (number === 4){
+			$(".slide4").slideUp();
+			$(".menu4").removeClass('current');
 			$(".slide0").slideDown();
 			$(".menu0").addClass('current');
 			$("#next").css('transform', 'rotate(0deg)');
@@ -63,6 +63,16 @@ $(document).ready(function() {
 		$(".slide3").slideDown();
 
 		number = 3;
+
+		$("#next").css('transform', 'rotate(180deg)');
+	});
+	$(".menu4").click(function() {
+		$(".slide" + number).slideUp();
+		$(".menu" + number).removeClass('current');
+		$(".menu4").addClass('current');
+		$(".slide4").slideDown();
+
+		number = 4;
 
 		$("#next").css('transform', 'rotate(180deg)');
 	});
