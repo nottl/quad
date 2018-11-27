@@ -1,13 +1,10 @@
 <html>
 	<head>
-<!-- Place this within the <head> tag or just before the end of your <body> tag. -->
-<script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
-
-<style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://nottl.github.io/quad/quad.js"></script>
+	<style>
+		body, html {
 	
-body, html {
-	margin:auto;
-		
 	height: 100%;
 font-family: 'Calibri',sans-serif;}
 	ul {
@@ -17,7 +14,7 @@ li {
 			display: inline-block;
 			height: 50px;
 						text-align: center;
-			
+	
 						padding: 0 20px 0 20px;line-height:48px;
 			
 			}
@@ -89,37 +86,68 @@ li:hover {
 header {text-align:center;}
 .table {width:96%;margin-left:2%;margin-right:2%;margin-top:auto;margin-bottom:auto;}
 	
-.fac {width:200px;vertical-align:middle;}
 
 
-.caption {text-align:center; font-size:12px;color:black;}
-@media screen and (max-width: 600px){
-.cover	{ width:95%; padding:5px;margin:auto;float:none; display: inline-block;} 
-.text {display: inline-block; text-align:left; width:80%;margin: auto; }
-body {width:100%;}
+
+.caption {text-align:center; font-size:12px;color:white;  visibility: hidden;
+  opacity: 0;}
+
+@media screen and (max-width: 649px){
+  .text {display: inline-block; width:98%;margin: auto; }
+
+body {width:100%;} .fac {width:100%;padding:1px;}li {
+			display: inline-block;
+			height: 20px;
+						text-align: center;
+
+						padding: 0 7px 0 7px;line-height:18px;border:1px outset #fff;
+			
+			}
 }
 
-@media screen and (min-width: 600px) {
-    .cover {width:45%; float:right;} 
-.text {float:left; text-align:left; width:45%; margin-left:9%;} 
-	body {width:80%;}
+@media screen and (min-width: 650px) {
+    .fac {width:50%;padding:5px;}
+  .text {display: inline-block; width:80%;margin: auto; }
+	body {width:80%;margin:auto;}
 }
 .research {width:80%; text-align:left; margin-left:10%; margin-right:10%;}
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://farm9.staticflickr.com/8403/8618592346_e4bf2f2028.jpg");
 
+    /* Set a specific height */
+    height: 100%;
 
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-image:hover .caption{
+ visibility: visible;
+  opacity: 1;}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+h1{font-size: 70px;}
+.project {background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));padding:7px;
+ 
+}
+
+.caption a{color:#00baf2;}
+.text {text-align:left;color:black;font-size:18px;}
 		</style>
-	
-      
-      
-		
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://nottl.github.io/quad/quad.js"></script>
-	
 </head>
 <body>
 <header>
-<h1><i>The Quad</i></h1>
-	A project by the <a href="http://freedomforuminstitute.org/first-amendment-center"><img class="fac" src="https://nottl.github.io/quad/FAC%20horizontal%20RGB.png"></a>
+<hr>
   <ul>
     <li class="current menu0">HOME</li>
     <li class="menu1">ORGANIZATION DIRECTORY</li>
@@ -127,19 +155,27 @@ body {width:100%;}
     <li class="menu3">SURVEYS</li>
 	  <li class="menu4">JOURNALIST DIRECTORY</li>
 </ul>
+<hr>
 </header>
 
 <div id="slides">
 
   <div class="slide slide0">
-<div class="cover"><a data-flickr-embed="true"  href="https://www.flickr.com/photos/sea-turtle/8618592346/" title="Quad Crowd"><p><img src="https://farm9.staticflickr.com/8403/8618592346_e4bf2f2028.jpg" alt="Quad Crowd"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>    <div class="caption"><i><a href="https://www.flickr.com/photos/sea-turtle/8618592346/">"Quad Crowd"</a> by <a href="https://www.flickr.com/photos/sea-turtle/">sea turtle</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></i></div></div>
-<div class="text">
-<h5 style="color:black;">The Quad is a comprehensive, non-partisan resource for all things related to speech on college and university campuses in the United States.</h3>
-<h5 style="color:black;">Featuring a first-of-its kind directory of organizations and influencers championing campus free speech, the Quad is also your source for the latest surveys and research about college students and free expression.</h5> 
-<h5 style="color:black;">This resource is a product of the <a href="http://freedomforuminstitute.org/first-amendment-center">First Amendment Center at the Freedom Forum Institute</a>. The organization and journalist directories were compiled in partnership with the <a href="https://www.forsmarshgroup.com/">Fors Marsh Group</a>.</h5>
-</div>
+  <div class="hero-image">
+  <div class="hero-text">
+  <h1><i>The Quad</i></h1>
+  <div class="project">
+	<p>A project by the <br><a href="http://freedomforuminstitute.org/first-amendment-center"><img class="fac" src="https://nottl.github.io/quad/FAC%20horizontal%20RGB.png"></a></p></div>
+ <br> <div class="caption"><i><a href="https://www.flickr.com/photos/sea-turtle/8618592346/">"Quad Crowd"</a> by <a href="https://www.flickr.com/photos/sea-turtle/">sea turtle</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></i></div>
+ </div></div>
+ <div class="caption"><i><a href="https://www.flickr.com/photos/sea-turtle/8618592346/">"Quad Crowd"</a> by <a href="https://www.flickr.com/photos/sea-turtle/">sea turtle</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></i></div>
+<div class="text"><p>
+The Quad is a comprehensive, non-partisan resource for all things related to speech on college and university campuses in the United States.</p>
+<p>Featuring a first-of-its kind directory of organizations and influencers championing campus free speech, the Quad is also your source for the latest surveys and research about college students and free expression.</p> 
+<p>This resource is a product of the <a href="http://freedomforuminstitute.org/first-amendment-center">First Amendment Center at the Freedom Forum Institute</a>. The organization and journalist directories were compiled in partnership with the <a href="https://www.forsmarshgroup.com/">Fors Marsh Group</a>.</p>
+</div></div>
 
-  </div>
+  
   
   <div class="slide slide1">
    <h1>Organization Directory</h1>
