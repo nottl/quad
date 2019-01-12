@@ -4,7 +4,7 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 @media(max-width:425px) {
-    .cherryblossoms {display:none;}
+    .cherryblossoms {display:none;}}
 .logo {width:200px;}
 .quad { 
  color:#00baf2; font-size:2.8em; font-weight:bold;font-family:'Cookie', cursive;
