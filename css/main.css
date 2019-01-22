@@ -389,11 +389,7 @@ header .fa {
     padding-left: 30px;
   padding-right: 30px; padding-top:30px; }
 
-.section-2 p a {
-    position: absolute;
-    bottom: -46px;
-    right: -38px;
-}
+
 
 .section-2 .box {
     box-shadow: 0 0 25px rgba(0, 0, 0, .15) !important;
