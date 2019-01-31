@@ -1,1 +1,14 @@
 theme: jekyll-theme-minimal
+defaults:
+  -
+   efaults:
+  -
+    scope:
+      path: ""
+     values:
+      layout: "default"
+  -
+    scope:
+      path: "index.html"
+       values:
+      layout: "frontpage" # overrides previous default layout
