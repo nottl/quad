@@ -5,7 +5,7 @@ html {
 }
 .faq-section {
     background: #fdfdfd;
-    min-height: 100vh; 
+
     padding: 10vh 0 0; 
 }
 .faq-title h2 {
@@ -97,7 +97,7 @@ html {
   padding-left: 35px;
   padding-bottom: 16px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: #6F8BA4;
   line-height: 28px;
   letter-spacing: 1px;
