@@ -7,19 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <title>{{ page.title }}</title>
+    <title>The Quad</title>
+    <style>
+    .jumbotron {width: 100%;height: 250px;}
+        .jumbotron h2 {padding-bottom: 0;}
+    </style>
 </head>
 
 <body>
-    <header class="header bg">
+   <header class="header bg">
         <div class="container text-white">
             <div class="row">
                 <div class="col-sm-4 align-self-center text-left">
@@ -65,7 +68,7 @@
                         <a class="nav-link" href="law.html">Law</a>
                     </li>
                   <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.html">About us</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +76,6 @@
         <!--container end-->
     </nav>
     <!--Section-1-->
- 
     <section class="section-1">
         <div class="jumbotron d-flex align-items-center">
             <div class="gradient"></div>
@@ -86,7 +88,8 @@
     </section>
   {{ content }}
    
-    <section class="section-7">
+   
+   <section class="section-7">
         <!-- Footer -->
         <footer class="page-footer font-small stylish-color-dark">
             <!-- Footer Links -->
@@ -167,12 +170,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/custom.js"></script>
-                              <script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
     <script>
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
             event.preventDefault();
             $(this).ekkoLightbox();
         });
     </script>
+  <script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
 </body>
 </html>
