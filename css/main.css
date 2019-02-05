@@ -11,9 +11,9 @@ html {
     .quad {font-size:2.8em; }}
     @media(max-width:975px) and (min-width: 651px)  {
     .fac {
-        height:40px;  transform: translate(0, 10px);
+        height:40px;  transform: translate(0, 50px);
         }
-       .quad{ font-size:4em; }}
+       .quad{ font-size:3.5em; }}
   @media(min-width:976px) {
     .fac {
         height:40px; 
