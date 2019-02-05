@@ -9,9 +9,9 @@ html {
         height:20px;
     }
     .quad {font-size:2.8em; }}
-    @media(max-width:975px) {
+    @media(max-width:975px) and (min-width: 651px)  {
     .fac {
-        height:40px;  transform: translate(0, -10px);
+        height:40px;  transform: translate(0, 10px);
         }
        .quad{ font-size:4em; }}
   @media(min-width:976px) {
