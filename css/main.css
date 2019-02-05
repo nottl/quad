@@ -7,11 +7,13 @@ html {
 @media(max-width:650px) {
     .fac {
         height:20px;
-    }}
+    }
+    .quad {font-size:2.8em; }}
     @media(min-width:651px) {
     .fac {
         height:40px;
-        }}
+        }
+        font-size:4em; }}
 .faq-section {
     background: #fdfdfd;
 
@@ -127,7 +129,7 @@ html {
 }
 .logo {width:200px;}
 .quad { 
- color:#00baf2; font-size:2.8em; font-weight:bold;font-family:'Cookie', cursive;
+ color:#00baf2; font-weight:bold;font-family:'Cookie', cursive;
 }
 
 
