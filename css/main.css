@@ -11,7 +11,7 @@ html {
     .quad {font-size:2.8em; }}
     @media(min-width:651px) {
     .fac {
-        height:40px;
+        height:40px; padding-left:4%;
         }
        .quad{ font-size:4em; }}
 .faq-section {
