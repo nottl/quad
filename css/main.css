@@ -9,9 +9,14 @@ html {
         height:20px;
     }
     .quad {font-size:2.8em; }}
-    @media(min-width:651px) {
+    @media(max-width:975px) {
     .fac {
-        height:40px; padding-left:4%;
+        height:40px;  transform: translate(0, -10px);
+        }
+       .quad{ font-size:4em; }}
+  @media(min-width:976px) {
+    .fac {
+        height:40px; 
         }
        .quad{ font-size:4em; }}
 .faq-section {
