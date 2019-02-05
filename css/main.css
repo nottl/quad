@@ -120,9 +120,11 @@ html {
 .quad { 
  color:#00baf2; font-size:2.8em; font-weight:bold;font-family:'Cookie', cursive;
 }
-.fac {  
-  width:120px;}
 
+.fac {position:fixed; right:10px;}
+@media (min-width:600px){.quad {font-size:4em;} }
+@media (min-width:750px){.fac {height:40px; }}
+@media (max-width:749px){.fac{height:20px;}}
     .map-responsive {
         position: relative;
         padding-bottom: 75%; // This is the aspect ratio
